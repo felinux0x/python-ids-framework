@@ -1,0 +1,11 @@
+# ids_config.yaml
+
+# Interface de rede para monitorar (ex: 'eth0', 'en0', 'Wi-Fi').
+# Deixe em branco para monitorar todas.
+network_interface: ""
+
+# Caminho para o arquivo de log onde os alertas serão salvos.
+log_file: "alerts.log"
+
+# Caminho para o arquivo de regras.
+rules_file: "rules/local.rules"

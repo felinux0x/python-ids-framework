@@ -1,0 +1,13 @@
+# rules/local.rules
+
+# SID 100001: Detecta um Nmap Xmas Scan
+alert tcp any any -> any any (msg:"Possivel Nmap Xmas Scan"; flags:"FPU"; sid:100001;)
+
+# SID 200001: Detecta tentativa de login FTP com usuário "admin"
+alert tcp any any -> any 21 (msg:"Tentativa de login FTP como admin"; content:"USER admin"; sid:200001;)
+
+# SID 200002: Detecta tentativa de acesso a um shell web comum
+alert tcp any any -> any 80 (msg:"Tentativa de acesso a shell web cmd.php"; content:"cmd.php"; sid:200002;)
+
+# SID 300001: Detecta tráfego ICMP (ping) - Exemplo de regra simples
+alert icmp any any -> any any (msg:"Trafego ICMP (Ping) detectado"; sid:300001;)
