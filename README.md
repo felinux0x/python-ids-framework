@@ -20,7 +20,7 @@ Um sistema de detecção de intrusão (IDS) robusto e configurável, escrito em 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/felinux0x/python-ids-framework.git](https://github.com/felinux0x/python-ids-framework.git)
+    git clone https://github.com/felinux0x/python-ids-framework.git
     cd python-ids-framework
     ```
 
